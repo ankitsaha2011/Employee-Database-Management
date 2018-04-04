@@ -1,3 +1,5 @@
 # Employee-Database-Management
-projectwork ongoing ..  
-employees can only be added till now
+add employees ..
+fire them ..
+promote them ..
+demote them ..
