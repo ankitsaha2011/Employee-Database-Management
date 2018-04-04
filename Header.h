@@ -14,40 +14,34 @@ public:
 	void fire();
 	void promote();
 	void demote();
-	void viewcurremp();
-	void viewforemp();
 };
 void Employee::promote()
 {
-	int raiseAmount = 10000;
+	salary  += 10000;
 }
 void Employee::demote()
 {
-	int demeritAmount = 10000;
+	salary -= 10000;
 }
 Employee::Employee()
 {
 	name="";
 	empNo = -1;
 	salary = -1;
-	hireStatus = -1;
-	fireStatus = -1;
+	hireStatus = 0;
+	fireStatus = 0;
 }
 void Employee::hire()
 {
 	//setter
-	hireStatus = 0;
+	hireStatus = 1;
 	salary = 20000;
 	fireStatus = -1;
 }
 void Employee::fire()
 {
 	//setter
-	fireStatus = 0;
+	fireStatus = 1;
 	salary = 0;
 	hireStatus = -1;
 }
-void Employee::viewcurremp()
-{}
-void Employee::viewforemp()
-{}
